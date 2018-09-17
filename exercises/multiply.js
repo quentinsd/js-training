@@ -9,19 +9,19 @@
  */
 
 // Your code :
-function multiply(numb1, numb2) {
+function multiply(num1, num2) {
     let result = 0;
-    if (numb1 >= 0) {
-      for (let i = 0; i < numb1; i++) {
-        result += numb2;
+    if (num1 >= 0) {
+      for (let i = 0; i < num1; i++) {
+        result += num2;
       }
-    } else if (numb2 >= 0) {
-      for (let i = 0; i < numb2; i++) {
-        result += numb1;
+    } else if (num2 >= 0) {
+      for (let i = 0; i < num2; i++) {
+        result += num1;
       }
-    } else if (numb1 < 0 && numb2 < 0) {
-      for (let i = 0; i < -numb2; i++) {
-        result += -numb1;
+    } else if (num1 < 0 && num2 < 0) {
+      for (let i = 0; i < -num2; i++) {
+        result += -num1;
         result = result;
       }
     }
