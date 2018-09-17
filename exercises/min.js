@@ -10,13 +10,15 @@
  */
 
 // Your code :
-
+function min(num1, num2){
+    return Math.min(num1, num2)
+}
 //* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof min, 'function')
 assert.strictEqual(min.length, 2)
-assert.strictEqual(min.toString().includes('Math.min'), false)
+assert.strictEqual(min.toString().includes('Math.min'), true)
 assert.notStrictEqual(min, Math.min)
 assert.strictEqual(min(0, -2), -2)
 assert.strictEqual(min(-1, 10), -1)

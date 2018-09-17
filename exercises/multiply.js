@@ -9,7 +9,25 @@
  */
 
 // Your code :
-
+function multiply(numb1, numb2) {
+    let result = 0;
+    if (numb1 >= 0) {
+      for (let i = 0; i < numb1; i++) {
+        result += numb2;
+      }
+    } else if (numb2 >= 0) {
+      for (let i = 0; i < numb2; i++) {
+        result += numb1;
+      }
+    } else if (numb1 < 0 && numb2 < 0) {
+      for (let i = 0; i < -numb2; i++) {
+        result += -numb1;
+        result = result;
+      }
+    }
+  
+    return result;
+  }
 //* Begin of tests
 const assert = require('assert')
 

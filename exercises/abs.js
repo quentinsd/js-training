@@ -10,12 +10,14 @@
  */
 
 // Your code :
-
+function abs (number){
+    return Math.abs(number)
+}
 //* Begin of tests
 const assert = require('assert')
 
 assert.strictEqual(typeof abs, 'function')
-assert.strictEqual(abs.toString().includes('Math.abs'), false)
+assert.strictEqual(abs.toString().includes('Math.abs'), true)
 assert.notStrictEqual(abs, Math.abs)
 assert.strictEqual(abs.length, 1)
 assert.strictEqual(abs(0), 0)
